@@ -70,10 +70,12 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
         echo "
 <div class=\"ContainerProfile\">
     <div class=\"ContainerProfileLeft\">
-        <img src=\"/src/public/images/profileImage.webp\" alt=\"la photo de profile de Fawzi ouaheb\">
+        <img class=\"imgProfile\" src=\"/src/public/images/profileImage.webp\" alt=\"la photo de profile de Fawzi ouaheb\">
+        <img class=\"imgBitmogie\" src=\"/src/public/images/bitmojie.png\" alt=\"le bitmojoe de Fawzi ouaheb\">
     </div>
     
     <div class=\"ContainerProfileRight\">
+        
         <div class=\"ContainerProfileNavbar\">
             <ul>
                 <li><a href=\"#\">Home</a></li>
@@ -82,11 +84,21 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
                 <li><a href=\"#\">Project</a></li>
             </ul>
         </div>
+
         <div class=\"ContainerProfilePresentation\">
             <h2>Fawzi OUAHEB</h2>
             <h3>Network Engineer</h3>
-            <h5>Welcome to my portfolio to discover my experiences and projects</h5>
+            <p>Welcome to my portfolio to discover my experiences and projects</p>
         </div>
+
+        <div class=\"ContainerProfileSocial\">
+            <button class=\"btn-donate\">
+                Download Cv
+            </button>
+        </div>
+  
+
+        
     </div>
 </div>
 
@@ -94,7 +106,7 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
 ";
     }
 
-    // line 35
+    // line 47
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -121,7 +133,7 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  98 => 35,  70 => 9,  66 => 8,  60 => 5,  56 => 4,  49 => 3,  38 => 2,);
+        return array (  110 => 47,  70 => 9,  66 => 8,  60 => 5,  56 => 4,  49 => 3,  38 => 2,);
     }
 
     public function getSourceContext()
@@ -137,10 +149,12 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
 
 <div class=\"ContainerProfile\">
     <div class=\"ContainerProfileLeft\">
-        <img src=\"/src/public/images/profileImage.webp\" alt=\"la photo de profile de Fawzi ouaheb\">
+        <img class=\"imgProfile\" src=\"/src/public/images/profileImage.webp\" alt=\"la photo de profile de Fawzi ouaheb\">
+        <img class=\"imgBitmogie\" src=\"/src/public/images/bitmojie.png\" alt=\"le bitmojoe de Fawzi ouaheb\">
     </div>
     
     <div class=\"ContainerProfileRight\">
+        
         <div class=\"ContainerProfileNavbar\">
             <ul>
                 <li><a href=\"#\">Home</a></li>
@@ -149,11 +163,21 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
                 <li><a href=\"#\">Project</a></li>
             </ul>
         </div>
+
         <div class=\"ContainerProfilePresentation\">
             <h2>Fawzi OUAHEB</h2>
             <h3>Network Engineer</h3>
-            <h5>Welcome to my portfolio to discover my experiences and projects</h5>
+            <p>Welcome to my portfolio to discover my experiences and projects</p>
         </div>
+
+        <div class=\"ContainerProfileSocial\">
+            <button class=\"btn-donate\">
+                Download Cv
+            </button>
+        </div>
+  
+
+        
     </div>
 </div>
 
