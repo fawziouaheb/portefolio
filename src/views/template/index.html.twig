@@ -1,0 +1,36 @@
+{# la page d'acuuile #}
+{% extends 'template/layoutGeneral.html.twig' %}
+{% block title %} {% endblock %}
+{% block stylesheets %}
+{{ parent() }}
+{% endblock %}
+         
+{% block content %}
+
+<div class="ContainerProfile">
+    <div class="ContainerProfileLeft">
+        <img src="/src/public/images/profileImage.webp" alt="la photo de profile de Fawzi ouaheb">
+    </div>
+    
+    <div class="ContainerProfileRight">
+        <div class="ContainerProfileNavbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Project</a></li>
+            </ul>
+        </div>
+        <div class="ContainerProfilePresentation">
+            <h2>Fawzi OUAHEB</h2>
+            <h3>Network Engineer</h3>
+            <h5>Welcome to my portfolio to discover my experiences and projects</h5>
+        </div>
+    </div>
+</div>
+
+      
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}

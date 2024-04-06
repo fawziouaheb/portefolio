@@ -1,0 +1,83 @@
+.ContainerProfile {
+    display: flex;
+    justify-content: space-between;
+    border : solid 1px red;
+    width: 100%;
+    height: 350px;
+}
+
+.ContainerProfileRight{
+    border: solid 1px blue !important;
+    width: 67%;
+    height: 100%;
+    background-color: #312E2E;  
+    position: relative;
+}
+.ContainerProfileLeft{
+    border: solid 1px yellow !important;
+    width: 45%;
+    height: 100%;
+    background-color: #FFFFFF;
+    position: relative ; /* position les contenueur enfant par rapport a leur div*/
+
+}
+
+.ContainerProfileLeft img {
+    height: 150px;
+    width: auto;
+    border:  5px solid #141B42;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #FFFFFF;
+    margin:  auto;
+    position: absolute;
+    top : 50%;
+    transform: translateY(-50%);
+    left: 69% !important;
+
+}
+
+.ContainerProfileNavbar{
+    position: absolute;
+    border: solid 1px green;
+    width: 70%;
+    margin-left: 30%;
+    justify-content: center;
+
+    display: flex;
+
+}
+
+.ContainerProfileNavbar li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 30px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: color 0.2s; 
+}
+.ContainerProfileNavbar li a:hover {
+    color: red;
+}
+.ContainerProfileNavbar ul{
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.ContainerProfilePresentation {
+    position:  absolute;
+    width: 100%;
+    height: 60%;
+    border: solid 1px red;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.ContainerProfilePresentation h2{
+    margin-left: 16%;
+    margin-top: 30px;
+}
+

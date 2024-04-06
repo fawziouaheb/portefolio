@@ -1,0 +1,22 @@
+{# layout general #}
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %} {% endblock %}</title>
+        {% block stylesheets %}
+        <link rel="stylesheet" href="/src/public/css/index.css">
+        {% endblock %}
+    </head>
+    <body>
+
+        {% block content %}
+
+        {% endblock %}
+   
+        {% block javascript %}
+        {% endblock %}
+    </body>
+</html>
