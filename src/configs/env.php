@@ -19,7 +19,7 @@ return Config::create()
     ->setConfig(name: EnvConfig::APPLICATION_NAME_CONFIG->value,value: "Mon application")
 
     // lien de l'application
-    ->setConfig(name: EnvConfig::APPLICATION_LINK_CONFIG->value,value: "http://0.0.0.0:8080/")
+    ->setConfig(name: EnvConfig::APPLICATION_LINK_CONFIG->value,value: "http://127.0.0.1:8080/")
 
     // mode de développement true = dev - false = prod
     ->setConfig(name: EnvConfig::DEV_MODE_CONFIG->value,value: true)

@@ -13,7 +13,7 @@ use Twig\Source;
 use Twig\Template;
 
 /* template/layoutGeneral.html.twig */
-class __TwigTemplate_1819d49bc703eba33b5bef675c1534d8 extends Template
+class __TwigTemplate_70b0472ed034ab43885db02555fdcd8c extends Template
 {
     private $source;
     private $macros = [];
@@ -51,19 +51,19 @@ class __TwigTemplate_1819d49bc703eba33b5bef675c1534d8 extends Template
         ";
         // line 9
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 13
+        // line 12
         echo "    </head>
     <body>
 
         ";
-        // line 16
+        // line 15
         $this->displayBlock('content', $context, $blocks);
-        // line 19
+        // line 18
         echo "   
         ";
-        // line 20
+        // line 19
         $this->displayBlock('javascript', $context, $blocks);
-        // line 22
+        // line 21
         echo "    </body>
 </html>";
     }
@@ -81,24 +81,23 @@ class __TwigTemplate_1819d49bc703eba33b5bef675c1534d8 extends Template
         $macros = $this->macros;
         // line 10
         echo "        <link rel=\"stylesheet\" href=\"/src/public/css/index.css\">
-        <link rel=\"stylesheet\" href=\"/src/public/css/sections.css\">
         ";
     }
 
-    // line 16
+    // line 15
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 17
+        // line 16
         echo "
         ";
     }
 
-    // line 20
+    // line 19
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 21
+        // line 20
         echo "        ";
     }
 
@@ -115,7 +114,7 @@ class __TwigTemplate_1819d49bc703eba33b5bef675c1534d8 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  102 => 21,  98 => 20,  93 => 17,  89 => 16,  83 => 10,  79 => 9,  72 => 8,  67 => 22,  65 => 20,  62 => 19,  60 => 16,  55 => 13,  53 => 9,  49 => 8,  41 => 2,);
+        return array (  101 => 20,  97 => 19,  92 => 16,  88 => 15,  83 => 10,  79 => 9,  72 => 8,  67 => 21,  65 => 19,  62 => 18,  60 => 15,  55 => 12,  53 => 9,  49 => 8,  41 => 2,);
     }
 
     public function getSourceContext()
@@ -130,7 +129,6 @@ class __TwigTemplate_1819d49bc703eba33b5bef675c1534d8 extends Template
         <title>{% block title %} {% endblock %}</title>
         {% block stylesheets %}
         <link rel=\"stylesheet\" href=\"/src/public/css/index.css\">
-        <link rel=\"stylesheet\" href=\"/src/public/css/sections.css\">
         {% endblock %}
     </head>
     <body>

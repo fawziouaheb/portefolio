@@ -13,7 +13,7 @@ use Twig\Source;
 use Twig\Template;
 
 /* /template/index.html.twig */
-class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
+class __TwigTemplate_f31d366352772bb1ccee713da17432cc extends Template
 {
     private $source;
     private $macros = [];
@@ -96,16 +96,17 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
                 Download Cv
             </button>
         </div>
+  
+
+        
     </div>
-            
 </div>
 
+      
 ";
-        // line 42
-        $this->loadTemplate("template/section/experience.html.twig", "/template/index.html.twig", 42)->display($context);
     }
 
-    // line 45
+    // line 47
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -132,7 +133,7 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  109 => 45,  105 => 42,  70 => 9,  66 => 8,  60 => 5,  56 => 4,  49 => 3,  38 => 2,);
+        return array (  110 => 47,  70 => 9,  66 => 8,  60 => 5,  56 => 4,  49 => 3,  38 => 2,);
     }
 
     public function getSourceContext()
@@ -174,11 +175,13 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
                 Download Cv
             </button>
         </div>
+  
+
+        
     </div>
-            
 </div>
 
-{% include 'template/section/experience.html.twig' %}
+      
 {% endblock %}
 
 {% block javascript %}

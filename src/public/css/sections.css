@@ -1,0 +1,70 @@
+.Container-Experience {
+    border: solid 3px rgb(84, 179, 46);
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+.line-experience {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(19, 200, 94);
+    width: 10px;
+    height: 80%;
+    margin: 0 auto;
+    border-radius: 3px;
+}   
+.round-exp1 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: brown;
+    transform: translate(-50%, -15%);
+    left: 50%;
+    top: 15%;
+}
+.round-exp2 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(37, 98, 126);
+    transform: translate(-50%, -85%);
+    left: 50%;
+    top: 85%;
+}
+
+.text-experience-1 {
+    position: absolute;
+    top: 28%;
+    left: 53%;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    height: 200px;
+    width: 40%;
+    background-color: rgb(67, 64, 64);
+    border-radius: 3%;
+} 
+.title-experience-1 {
+    position: absolute;
+    top: 20%;
+    left: 53%;
+    font-size: 18px;
+    color: white;
+}
+.text-experience-2 {
+    position: absolute;
+    top: 70%;
+    left: 53%;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    height: 200px;
+    width: 40%;
+    background-color: rgb(67, 64, 64);
+    border-radius: 3%;
+
+} 

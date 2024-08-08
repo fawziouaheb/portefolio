@@ -20,7 +20,7 @@ class LaunchServerCommand extends SaboCommand{
     /**
      * @brief Hôte par défaut
      */
-    protected const string DEFAULT_HOST = "127.0.0.1";
+    protected const string DEFAULT_HOST = "0.0.0.0";
 
     #[Override]
     public function execCommand(SaboCli $cli): void{
