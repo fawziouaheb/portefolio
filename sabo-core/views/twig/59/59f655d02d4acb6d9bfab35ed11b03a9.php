@@ -38,7 +38,13 @@ class __TwigTemplate_74ac39f6b9990f7255b7c4939cedc5cf extends Template
     <h2>Skills</h2>
     <div class=\"skills-container\">
         <div class=\"skills-section\">
-            <p>kj,hgn</p>
+            <h2>Virtualisation</h2>
+            <div class=\"skill-with-progress\">
+                <p>VMWARE</p>
+                <div class=\"progress-bar\">
+                    <div class=\"progress\" style=\"width: 50%;\"></div>
+                </div>
+            </div>
         </div>
 
         <div class=\"skills-section\">
@@ -86,7 +92,13 @@ class __TwigTemplate_74ac39f6b9990f7255b7c4939cedc5cf extends Template
     <h2>Skills</h2>
     <div class=\"skills-container\">
         <div class=\"skills-section\">
-            <p>kj,hgn</p>
+            <h2>Virtualisation</h2>
+            <div class=\"skill-with-progress\">
+                <p>VMWARE</p>
+                <div class=\"progress-bar\">
+                    <div class=\"progress\" style=\"width: 50%;\"></div>
+                </div>
+            </div>
         </div>
 
         <div class=\"skills-section\">

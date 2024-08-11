@@ -135,6 +135,22 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.skill-with-progress p {
+    color: white;
+} 
+.progress-bar {
+    background-color: #2E2C2C; /* Couleur de fond de la barre */
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px; /* Hauteur de la barre */
+    margin-top: 20px; /* Espace entre le texte et la barre */
+}
+
+.progress {
+    background-color: #141B42; /* Couleur de la progression */
+    height: 100%; /* Largeur de la progression (ici, à moitié) */
+    border-radius: 10px 0 0 10px; /* Coins arrondis à gauche */
+}
 
 /* Media query pour petits écrans */
 @media (max-width: 768px) {
