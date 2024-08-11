@@ -1,3 +1,6 @@
+body{
+    background-color: #2E2C2C;
+}
 .ContainerProfile {
     display: flex;
     justify-content: space-between;

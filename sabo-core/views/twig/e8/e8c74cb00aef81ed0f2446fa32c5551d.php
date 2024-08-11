@@ -103,9 +103,17 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
 ";
         // line 42
         $this->loadTemplate("template/section/experience.html.twig", "/template/index.html.twig", 42)->display($context);
+        // line 43
+        echo "
+";
+        // line 44
+        $this->loadTemplate("template/section/skills.html.twig", "/template/index.html.twig", 44)->display($context);
+        // line 45
+        echo "
+";
     }
 
-    // line 45
+    // line 48
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -132,7 +140,7 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  109 => 45,  105 => 42,  70 => 9,  66 => 8,  60 => 5,  56 => 4,  49 => 3,  38 => 2,);
+        return array (  117 => 48,  112 => 45,  110 => 44,  107 => 43,  105 => 42,  70 => 9,  66 => 8,  60 => 5,  56 => 4,  49 => 3,  38 => 2,);
     }
 
     public function getSourceContext()
@@ -179,6 +187,9 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
 </div>
 
 {% include 'template/section/experience.html.twig' %}
+
+{% include 'template/section/skills.html.twig' %}
+
 {% endblock %}
 
 {% block javascript %}

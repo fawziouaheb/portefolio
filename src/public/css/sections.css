@@ -9,7 +9,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(19, 200, 94);
+    background-color: #ffff;
     width: 10px;
     height: 80%;
     margin: 0 auto;
@@ -20,7 +20,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: brown;
+    background-color: #141B42;
     transform: translate(-50%, -15%);
     left: 50%;
     top: 15%;
@@ -30,7 +30,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: rgb(37, 98, 126);
+    background-color: #141B42;
     transform: translate(-50%, -85%);
     left: 50%;
     top: 70%;
@@ -45,7 +45,7 @@
     text-align: center;
     height: 200px;
     width: 40%;
-    background-color: rgb(67, 64, 64);
+    background-color: #1E1E1E;
     border-radius: 3%;
 } 
 .title-experience-1 {
@@ -69,7 +69,7 @@
     color: white;
     height: 200px;
     width: 40%;
-    background-color: rgb(67, 64, 64);
+    background-color: #1E1E1E;
     border-radius: 3%;
 } 
 .img-experience-1 {
@@ -100,6 +100,62 @@
     color: black; /* Couleur du point */
     width: 1em;
 }
+
+
+
+
+.skills {
+    padding: 50px;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.skills h2 {
+    text-align: center;
+    margin-bottom: 7vh;
+    font-size: 2em;
+    color: white;
+}
+
+.skills-container {
+    border: solid 3px rgb(14, 57, 211);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+.skills-section {
+    flex: 1 1 calc(50% - 40px); 
+    min-height: 200px;
+    background: #1E1E1E;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query pour petits écrans */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column; /* Afficher les sections en colonne */
+    }
+    .skills {
+        padding: 18px;
+        margin: 0 auto;
+    }
+    
+}
+
+.skills-section p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+}
+
+
+
 
 @media (max-width: 600px) {
     .img-experience-2 {
