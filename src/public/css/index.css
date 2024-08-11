@@ -97,15 +97,15 @@
     margin-left: 20%;
 }
 .ContainerProfileSocial {
-position: relative;
-border: solid 1px yellow;
-width: 100%;
-height: 20%;
-top: 100%;
-transform: translateY(-100%);
-justify-content: flex-end;
-align-items: center;
-display: flex;
+    position: relative;
+    border: solid 1px yellow;
+    width: 100%;
+    height: 20%;
+    top: 100%;
+    transform: translateY(-100%);
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
 }
 @media screen and (max-width: 1100px) {
 

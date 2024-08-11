@@ -39,17 +39,26 @@ class __TwigTemplate_4a2edfe8dda046018aff1b4f546a8802 extends Template
     <div class=\"round-exp1\"></div>
     <div class=\"round-exp2\"></div>
     </div>
-    <div class=\"title-experience-1\">
-        <p>Apprentice - 2 Years</p>
-    </div>
-    <div class=\"text-experience-1\">
-        <p>experience  1</p>
-    </div>
-    <div class=\"text-experience-2\">
-        <p>experience 2</p>
-   </div>
 
-</div>";
+        <img class=\"img-experience-1\" src=\"/src/public/images/logo-tereos.png\" alt=\"Apprenti chez Tereos\">
+        <div class=\"title-experience-1\">
+            <h3>Apprentice - 2 Years</h3>
+        </div>
+        <div class=\"text-experience-1\">
+            <p>experience  1</p>
+        </div>
+        
+        <img class=\"img-experience-2\" src=\"/src/public/images/logo-virobotic.png\" alt=\"stagiaire chez Tereos\">
+        <div class=\"title-experience-2\">
+            <h3>Internship - 2 Month</h3>
+        </div>
+        <div class=\"text-experience-2\">
+            <p><span class=\"bullet-point\">•</span> Analysis of website performance and proposal of improvement solutions to enhance user experience.</p>
+            <p><span class=\"bullet-point\">•</span> Development and maintenance of a website using the Symfony framework.</p>
+            <p><span class=\"bullet-point\">•</span> Ensuring the security of the site's data.</p>      
+        </div>
+
+</div>      ";
     }
 
     /**
@@ -75,16 +84,25 @@ class __TwigTemplate_4a2edfe8dda046018aff1b4f546a8802 extends Template
     <div class=\"round-exp1\"></div>
     <div class=\"round-exp2\"></div>
     </div>
-    <div class=\"title-experience-1\">
-        <p>Apprentice - 2 Years</p>
-    </div>
-    <div class=\"text-experience-1\">
-        <p>experience  1</p>
-    </div>
-    <div class=\"text-experience-2\">
-        <p>experience 2</p>
-   </div>
 
-</div>", "template/section/experience.html.twig", "C:\\wamp64\\www\\portefolio\\src\\views\\template\\section\\experience.html.twig");
+        <img class=\"img-experience-1\" src=\"/src/public/images/logo-tereos.png\" alt=\"Apprenti chez Tereos\">
+        <div class=\"title-experience-1\">
+            <h3>Apprentice - 2 Years</h3>
+        </div>
+        <div class=\"text-experience-1\">
+            <p>experience  1</p>
+        </div>
+        
+        <img class=\"img-experience-2\" src=\"/src/public/images/logo-virobotic.png\" alt=\"stagiaire chez Tereos\">
+        <div class=\"title-experience-2\">
+            <h3>Internship - 2 Month</h3>
+        </div>
+        <div class=\"text-experience-2\">
+            <p><span class=\"bullet-point\">•</span> Analysis of website performance and proposal of improvement solutions to enhance user experience.</p>
+            <p><span class=\"bullet-point\">•</span> Development and maintenance of a website using the Symfony framework.</p>
+            <p><span class=\"bullet-point\">•</span> Ensuring the security of the site's data.</p>      
+        </div>
+
+</div>      ", "template/section/experience.html.twig", "C:\\wamp64\\www\\portefolio\\src\\views\\template\\section\\experience.html.twig");
     }
 }
