@@ -36,20 +36,27 @@ class __TwigTemplate_74ac39f6b9990f7255b7c4939cedc5cf extends Template
         // line 1
         echo "<div class=\"skills\">
     <h2>Skills</h2>
-    <div class=\"skills-container\">
+    <div id=\"progress-section\" class=\"skills-container\">
         <div class=\"skills-section\">
             <h2>Virtualisation</h2>
             <div class=\"skill-with-progress\">
                 <p>VMWARE</p>
-                <div class=\"progress-bar\">
-                    <div class=\"progress\" style=\"width: 50%;\"></div>
+                <div class=\"progress-bar\" id=\"progress-vmware\">
+                    <div class=\"progress\"></div>
                 </div>
             </div>
         </div>
-
+        
         <div class=\"skills-section\">
-            <p>hggggggg</p>
+            <h2>Développement</h2>
+            <div class=\"skill-with-progress\">
+                <p>PHP</p>
+                <div class=\"progress-bar\" id=\"progress-php\">
+                    <div class=\"progress\"></div>
+                </div>
+            </div>
         </div>
+        
 
         <div class=\"skills-section\">
             <p>hggggggg</p>
@@ -90,20 +97,27 @@ class __TwigTemplate_74ac39f6b9990f7255b7c4939cedc5cf extends Template
     {
         return new Source("<div class=\"skills\">
     <h2>Skills</h2>
-    <div class=\"skills-container\">
+    <div id=\"progress-section\" class=\"skills-container\">
         <div class=\"skills-section\">
             <h2>Virtualisation</h2>
             <div class=\"skill-with-progress\">
                 <p>VMWARE</p>
-                <div class=\"progress-bar\">
-                    <div class=\"progress\" style=\"width: 50%;\"></div>
+                <div class=\"progress-bar\" id=\"progress-vmware\">
+                    <div class=\"progress\"></div>
                 </div>
             </div>
         </div>
-
+        
         <div class=\"skills-section\">
-            <p>hggggggg</p>
+            <h2>Développement</h2>
+            <div class=\"skill-with-progress\">
+                <p>PHP</p>
+                <div class=\"progress-bar\" id=\"progress-php\">
+                    <div class=\"progress\"></div>
+                </div>
+            </div>
         </div>
+        
 
         <div class=\"skills-section\">
             <p>hggggggg</p>

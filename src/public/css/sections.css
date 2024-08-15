@@ -139,18 +139,21 @@
     color: white;
 } 
 .progress-bar {
-    background-color: #2E2C2C; /* Couleur de fond de la barre */
+    background-color: #2E2C2C;
     border-radius: 10px;
     overflow: hidden;
-    height: 20px; /* Hauteur de la barre */
-    margin-top: 20px; /* Espace entre le texte et la barre */
+    height: 20px;
+    margin-top: 20px;
 }
 
 .progress {
-    background-color: #141B42; /* Couleur de la progression */
-    height: 100%; /* Largeur de la progression (ici, à moitié) */
-    border-radius: 10px 0 0 10px; /* Coins arrondis à gauche */
+    background-color: #141B42;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    width: 0%; /* Initialement à 0% pour l'animation */
+    transition: width 2s ease-out; /* Utilisation de transition ici */
 }
+
 
 /* Media query pour petits écrans */
 @media (max-width: 768px) {

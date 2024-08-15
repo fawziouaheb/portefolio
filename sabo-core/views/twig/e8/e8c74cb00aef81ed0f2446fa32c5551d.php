@@ -117,6 +117,9 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
+        // line 49
+        echo "<script src=\"/src/public/javascript/index.js\"></script>  
+";
     }
 
     /**
@@ -140,7 +143,7 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  117 => 48,  112 => 45,  110 => 44,  107 => 43,  105 => 42,  70 => 9,  66 => 8,  60 => 5,  56 => 4,  49 => 3,  38 => 2,);
+        return array (  121 => 49,  117 => 48,  112 => 45,  110 => 44,  107 => 43,  105 => 42,  70 => 9,  66 => 8,  60 => 5,  56 => 4,  49 => 3,  38 => 2,);
     }
 
     public function getSourceContext()
@@ -193,6 +196,7 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
 {% endblock %}
 
 {% block javascript %}
+<script src=\"/src/public/javascript/index.js\"></script>  
 {% endblock %}
 ", "/template/index.html.twig", "C:\\wamp64\\www\\portefolio\\src\\views\\template\\index.html.twig");
     }

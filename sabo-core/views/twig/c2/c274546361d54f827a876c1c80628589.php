@@ -63,8 +63,9 @@ class __TwigTemplate_1819d49bc703eba33b5bef675c1534d8 extends Template
         ";
         // line 20
         $this->displayBlock('javascript', $context, $blocks);
-        // line 22
-        echo "    </body>
+        // line 23
+        echo "
+    </body>
 </html>";
     }
 
@@ -99,7 +100,8 @@ class __TwigTemplate_1819d49bc703eba33b5bef675c1534d8 extends Template
     {
         $macros = $this->macros;
         // line 21
-        echo "        ";
+        echo "            <script src=\"/src/public/javascript/index.js\"></script>
+        ";
     }
 
     /**
@@ -115,7 +117,7 @@ class __TwigTemplate_1819d49bc703eba33b5bef675c1534d8 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  102 => 21,  98 => 20,  93 => 17,  89 => 16,  83 => 10,  79 => 9,  72 => 8,  67 => 22,  65 => 20,  62 => 19,  60 => 16,  55 => 13,  53 => 9,  49 => 8,  41 => 2,);
+        return array (  103 => 21,  99 => 20,  94 => 17,  90 => 16,  84 => 10,  80 => 9,  73 => 8,  67 => 23,  65 => 20,  62 => 19,  60 => 16,  55 => 13,  53 => 9,  49 => 8,  41 => 2,);
     }
 
     public function getSourceContext()
@@ -140,7 +142,9 @@ class __TwigTemplate_1819d49bc703eba33b5bef675c1534d8 extends Template
         {% endblock %}
    
         {% block javascript %}
+            <script src=\"/src/public/javascript/index.js\"></script>
         {% endblock %}
+
     </body>
 </html>", "template/layoutGeneral.html.twig", "C:\\wamp64\\www\\portefolio\\src\\views\\template\\layoutGeneral.html.twig");
     }
