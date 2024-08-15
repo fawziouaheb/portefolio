@@ -51,19 +51,19 @@ class __TwigTemplate_1819d49bc703eba33b5bef675c1534d8 extends Template
         ";
         // line 9
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 13
+        // line 17
         echo "    </head>
     <body>
 
         ";
-        // line 16
+        // line 20
         $this->displayBlock('content', $context, $blocks);
-        // line 19
+        // line 23
         echo "   
         ";
-        // line 20
+        // line 24
         $this->displayBlock('javascript', $context, $blocks);
-        // line 23
+        // line 28
         echo "
     </body>
 </html>";
@@ -83,24 +83,29 @@ class __TwigTemplate_1819d49bc703eba33b5bef675c1534d8 extends Template
         // line 10
         echo "        <link rel=\"stylesheet\" href=\"/src/public/css/index.css\">
         <link rel=\"stylesheet\" href=\"/src/public/css/sections.css\">
-        ";
-    }
-
-    // line 16
-    public function block_content($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        // line 17
-        echo "
+        <link rel=\"stylesheet\" href=\"/src/public/css/test.css\">
+        <link rel=\"stylesheet\" href=\"/src/public/css/project.css\">
+          <!-- Google Fonts -->
+            <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i\" rel=\"stylesheet\">
         ";
     }
 
     // line 20
-    public function block_javascript($context, array $blocks = [])
+    public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
         // line 21
-        echo "            <script src=\"/src/public/javascript/index.js\"></script>
+        echo "
+        ";
+    }
+
+    // line 24
+    public function block_javascript($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        // line 25
+        echo "         <!-- Vendor JS Files -->
+            <script src=\"/src/public/javascript/index.js\"></script>
         ";
     }
 
@@ -117,7 +122,7 @@ class __TwigTemplate_1819d49bc703eba33b5bef675c1534d8 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  103 => 21,  99 => 20,  94 => 17,  90 => 16,  84 => 10,  80 => 9,  73 => 8,  67 => 23,  65 => 20,  62 => 19,  60 => 16,  55 => 13,  53 => 9,  49 => 8,  41 => 2,);
+        return array (  107 => 25,  103 => 24,  98 => 21,  94 => 20,  84 => 10,  80 => 9,  73 => 8,  67 => 28,  65 => 24,  62 => 23,  60 => 20,  55 => 17,  53 => 9,  49 => 8,  41 => 2,);
     }
 
     public function getSourceContext()
@@ -133,6 +138,10 @@ class __TwigTemplate_1819d49bc703eba33b5bef675c1534d8 extends Template
         {% block stylesheets %}
         <link rel=\"stylesheet\" href=\"/src/public/css/index.css\">
         <link rel=\"stylesheet\" href=\"/src/public/css/sections.css\">
+        <link rel=\"stylesheet\" href=\"/src/public/css/test.css\">
+        <link rel=\"stylesheet\" href=\"/src/public/css/project.css\">
+          <!-- Google Fonts -->
+            <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i\" rel=\"stylesheet\">
         {% endblock %}
     </head>
     <body>
@@ -142,6 +151,7 @@ class __TwigTemplate_1819d49bc703eba33b5bef675c1534d8 extends Template
         {% endblock %}
    
         {% block javascript %}
+         <!-- Vendor JS Files -->
             <script src=\"/src/public/javascript/index.js\"></script>
         {% endblock %}
 
