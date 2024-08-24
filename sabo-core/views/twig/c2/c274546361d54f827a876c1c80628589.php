@@ -51,19 +51,19 @@ class __TwigTemplate_1819d49bc703eba33b5bef675c1534d8 extends Template
         ";
         // line 9
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 17
+        // line 18
         echo "    </head>
     <body>
 
         ";
-        // line 20
+        // line 21
         $this->displayBlock('content', $context, $blocks);
-        // line 23
+        // line 24
         echo "   
         ";
-        // line 24
+        // line 25
         $this->displayBlock('javascript', $context, $blocks);
-        // line 28
+        // line 29
         echo "
     </body>
 </html>";
@@ -81,29 +81,30 @@ class __TwigTemplate_1819d49bc703eba33b5bef675c1534d8 extends Template
     {
         $macros = $this->macros;
         // line 10
-        echo "        <link rel=\"stylesheet\" href=\"/src/public/css/index.css\">
+        echo "
         <link rel=\"stylesheet\" href=\"/src/public/css/sections.css\">
-        <link rel=\"stylesheet\" href=\"/src/public/css/test.css\">
+        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\">
         <link rel=\"stylesheet\" href=\"/src/public/css/project.css\">
+        <link rel=\"stylesheet\" href=\"/src/public/css/profile.css\">
           <!-- Google Fonts -->
             <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i\" rel=\"stylesheet\">
         ";
     }
 
-    // line 20
+    // line 21
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 21
+        // line 22
         echo "
         ";
     }
 
-    // line 24
+    // line 25
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 25
+        // line 26
         echo "         <!-- Vendor JS Files -->
             <script src=\"/src/public/javascript/index.js\"></script>
         ";
@@ -122,7 +123,7 @@ class __TwigTemplate_1819d49bc703eba33b5bef675c1534d8 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  107 => 25,  103 => 24,  98 => 21,  94 => 20,  84 => 10,  80 => 9,  73 => 8,  67 => 28,  65 => 24,  62 => 23,  60 => 20,  55 => 17,  53 => 9,  49 => 8,  41 => 2,);
+        return array (  108 => 26,  104 => 25,  99 => 22,  95 => 21,  84 => 10,  80 => 9,  73 => 8,  67 => 29,  65 => 25,  62 => 24,  60 => 21,  55 => 18,  53 => 9,  49 => 8,  41 => 2,);
     }
 
     public function getSourceContext()
@@ -136,10 +137,11 @@ class __TwigTemplate_1819d49bc703eba33b5bef675c1534d8 extends Template
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
         <title>{% block title %} {% endblock %}</title>
         {% block stylesheets %}
-        <link rel=\"stylesheet\" href=\"/src/public/css/index.css\">
+
         <link rel=\"stylesheet\" href=\"/src/public/css/sections.css\">
-        <link rel=\"stylesheet\" href=\"/src/public/css/test.css\">
+        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\">
         <link rel=\"stylesheet\" href=\"/src/public/css/project.css\">
+        <link rel=\"stylesheet\" href=\"/src/public/css/profile.css\">
           <!-- Google Fonts -->
             <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i\" rel=\"stylesheet\">
         {% endblock %}

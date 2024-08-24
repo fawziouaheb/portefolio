@@ -66,59 +66,29 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 9
+        // line 41
         echo "
-<div class=\"ContainerProfile\">
-    <div class=\"ContainerProfileLeft\">
-        <img class=\"imgProfile\" src=\"/src/public/images/profileImage.webp\" alt=\"la photo de profile de Fawzi ouaheb\">
-        <img class=\"imgBitmogie\" src=\"/src/public/images/bitmojie.png\" alt=\"le bitmojoe de Fawzi ouaheb\">
-    </div>
-    
-    <div class=\"ContainerProfileRight\">
-        
-        <div class=\"ContainerProfileNavbar\">
-            <ul>
-                <li><a href=\"#\">Home</a></li>
-                <li><a href=\"#\">Skills</a></li>
-                <li><a href=\"#\">Experience</a></li>
-                <li><a href=\"#\">Project</a></li>
-            </ul>
-        </div>
-
-        <div class=\"ContainerProfilePresentation\">
-            <h2>Fawzi OUAHEB</h2>
-            <h3>Network Engineer</h3>
-            <p>Welcome to my portfolio to discover my experiences and projects</p>
-        </div>
-
-        <div class=\"ContainerProfileSocial\">
-            <button class=\"btn-donate\">
-                Download Cv
-            </button>
-        </div>
-    </div>
-            
-</div>
-
 ";
         // line 42
-        $this->loadTemplate("template/section/experience.html.twig", "/template/index.html.twig", 42)->display($context);
+        $this->loadTemplate("template/section/profile.html.twig", "/template/index.html.twig", 42)->display($context);
         // line 43
-        $this->loadTemplate("template/section/skills.html.twig", "/template/index.html.twig", 43)->display($context);
+        $this->loadTemplate("template/section/experience.html.twig", "/template/index.html.twig", 43)->display($context);
         // line 44
-        $this->loadTemplate("template/section/formation.html.twig", "/template/index.html.twig", 44)->display($context);
+        $this->loadTemplate("template/section/skills.html.twig", "/template/index.html.twig", 44)->display($context);
         // line 45
-        $this->loadTemplate("template/section/project.html.twig", "/template/index.html.twig", 45)->display($context);
+        $this->loadTemplate("template/section/formation.html.twig", "/template/index.html.twig", 45)->display($context);
         // line 46
+        $this->loadTemplate("template/section/project.html.twig", "/template/index.html.twig", 46)->display($context);
+        // line 47
         echo "
 ";
     }
 
-    // line 49
+    // line 50
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 50
+        // line 51
         echo "<script src=\"/src/public/javascript/index.js\"></script>  
 ";
     }
@@ -144,7 +114,7 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  122 => 50,  118 => 49,  113 => 46,  111 => 45,  109 => 44,  107 => 43,  105 => 42,  70 => 9,  66 => 8,  60 => 5,  56 => 4,  49 => 3,  38 => 2,);
+        return array (  92 => 51,  88 => 50,  83 => 47,  81 => 46,  79 => 45,  77 => 44,  75 => 43,  73 => 42,  70 => 41,  66 => 8,  60 => 5,  56 => 4,  49 => 3,  38 => 2,);
     }
 
     public function getSourceContext()
@@ -157,7 +127,7 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
 {% endblock %}
          
 {% block content %}
-
+{# 
 <div class=\"ContainerProfile\">
     <div class=\"ContainerProfileLeft\">
         <img class=\"imgProfile\" src=\"/src/public/images/profileImage.webp\" alt=\"la photo de profile de Fawzi ouaheb\">
@@ -188,8 +158,9 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
         </div>
     </div>
             
-</div>
+</div> #}
 
+{% include 'template/section/profile.html.twig'%}
 {% include 'template/section/experience.html.twig' %}
 {% include 'template/section/skills.html.twig' %}
 {% include 'template/section/formation.html.twig' %}

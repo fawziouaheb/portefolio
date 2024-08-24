@@ -34,7 +34,8 @@ class __TwigTemplate_4a2edfe8dda046018aff1b4f546a8802 extends Template
     {
         $macros = $this->macros;
         // line 1
-        echo "<div class=\"Container-Experience\">
+        echo "<section id=\"experiences\">
+<div class=\"Container-Experience\">
    <div class=\"line-experience\">
     <div class=\"round-exp1\"></div>
     <div class=\"round-exp2\"></div>
@@ -57,8 +58,8 @@ class __TwigTemplate_4a2edfe8dda046018aff1b4f546a8802 extends Template
             <p><span class=\"bullet-point\">•</span> Development and maintenance of a website using the Symfony framework.</p>
             <p><span class=\"bullet-point\">•</span> Ensuring the security of the site's data.</p>      
         </div>
-
-</div>      ";
+</div>      
+</section>";
     }
 
     /**
@@ -79,7 +80,8 @@ class __TwigTemplate_4a2edfe8dda046018aff1b4f546a8802 extends Template
 
     public function getSourceContext()
     {
-        return new Source("<div class=\"Container-Experience\">
+        return new Source("<section id=\"experiences\">
+<div class=\"Container-Experience\">
    <div class=\"line-experience\">
     <div class=\"round-exp1\"></div>
     <div class=\"round-exp2\"></div>
@@ -102,7 +104,7 @@ class __TwigTemplate_4a2edfe8dda046018aff1b4f546a8802 extends Template
             <p><span class=\"bullet-point\">•</span> Development and maintenance of a website using the Symfony framework.</p>
             <p><span class=\"bullet-point\">•</span> Ensuring the security of the site's data.</p>      
         </div>
-
-</div>      ", "template/section/experience.html.twig", "C:\\wamp64\\www\\portefolio\\src\\views\\template\\section\\experience.html.twig");
+</div>      
+</section>", "template/section/experience.html.twig", "C:\\wamp64\\www\\portefolio\\src\\views\\template\\section\\experience.html.twig");
     }
 }

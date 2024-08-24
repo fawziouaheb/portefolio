@@ -34,7 +34,8 @@ class __TwigTemplate_36eb7ff47beedf157991e418ed06204b extends Template
     {
         $macros = $this->macros;
         // line 1
-        echo "<div class=\"formation\">
+        echo "<section id=\"formations\">
+<div class=\"formation\">
     <h2>Certification And Formation</h2>
     <div class=\"formation-container\">
 
@@ -68,9 +69,7 @@ class __TwigTemplate_36eb7ff47beedf157991e418ed06204b extends Template
 
 </div>
 </div>
-
-
-";
+</section>";
     }
 
     /**
@@ -91,7 +90,8 @@ class __TwigTemplate_36eb7ff47beedf157991e418ed06204b extends Template
 
     public function getSourceContext()
     {
-        return new Source("<div class=\"formation\">
+        return new Source("<section id=\"formations\">
+<div class=\"formation\">
     <h2>Certification And Formation</h2>
     <div class=\"formation-container\">
 
@@ -125,8 +125,6 @@ class __TwigTemplate_36eb7ff47beedf157991e418ed06204b extends Template
 
 </div>
 </div>
-
-
-", "template/section/formation.html.twig", "C:\\wamp64\\www\\portefolio\\src\\views\\template\\section\\formation.html.twig");
+</section>", "template/section/formation.html.twig", "C:\\wamp64\\www\\portefolio\\src\\views\\template\\section\\formation.html.twig");
     }
 }

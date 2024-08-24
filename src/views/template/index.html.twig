@@ -6,7 +6,7 @@
 {% endblock %}
          
 {% block content %}
-
+{# 
 <div class="ContainerProfile">
     <div class="ContainerProfileLeft">
         <img class="imgProfile" src="/src/public/images/profileImage.webp" alt="la photo de profile de Fawzi ouaheb">
@@ -37,8 +37,9 @@
         </div>
     </div>
             
-</div>
+</div> #}
 
+{% include 'template/section/profile.html.twig'%}
 {% include 'template/section/experience.html.twig' %}
 {% include 'template/section/skills.html.twig' %}
 {% include 'template/section/formation.html.twig' %}

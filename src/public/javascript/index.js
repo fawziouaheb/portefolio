@@ -80,3 +80,46 @@
       });
       
       /** fin de la partie projet scolaire*/
+    
+      const hamburger = document.querySelector('.hamburger');
+      const navMenu = document.querySelector('.navbar-m ul');
+      
+      hamburger.addEventListener('click', () => {
+          hamburger.classList.toggle('active');
+          navMenu.classList.toggle('active');
+      });
+      
+
+
+      document.addEventListener('DOMContentLoaded', function () {
+        const typingText = document.getElementById('typing-text');
+        const text = "Salut ! Moi c'est Fawzi. N'hésitez pas à scroller pour découvrir l'ensemble de mon profil !";
+    
+        let index = 0;
+    
+        function type() {
+            if (index < text.length) {
+                typingText.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(type, 50); // Ajuste la vitesse de frappe ici
+            }
+        }
+    
+        type();
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggleIcon = document.querySelector('.background-toggle');
+      let isGradient = false;
+  
+      toggleIcon.addEventListener('click', function() {
+          if (isGradient) {
+              document.body.style.background = '#2E2C2C'; // Couleur unie
+          } else {
+              document.body.style.background = 'linear-gradient(to left, #c6ffdd, #fbd786, #f7797d)'; // Dégradé
+          }
+          isGradient = !isGradient; // Basculer l'état
+      });
+  });
+  
+    
