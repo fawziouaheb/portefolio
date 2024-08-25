@@ -19,54 +19,84 @@
 
     /**debut animation pour la partie projets scolaire */
     document.addEventListener('DOMContentLoaded', function() {
-        const filters = document.querySelectorAll('#portfolio-flters li');
-        const projectsContainer = document.getElementById('portfolio-projects');
+      const projectsContainer = document.getElementById('portfolio-projects');
+      const modal = document.getElementById('projectModal');
+      const closeModal = document.querySelector('.close');
+      const modalImagesContainer = document.querySelector('.modal-images');
+      const modalDescription = document.querySelector('.modal-description');
       
-        const projects = {
-          '*': [
-            { category: 'filter-app', background: '/src/public/images/anssi_logo.png' },
-            { category: 'filter-card', background: '/src/public/images/anssi_logo.png' },
-            { category: 'filter-web', background: '/src/public/images/anssi_logo.png' }
-          ],
-          '.filter-app': [
-            { category: 'filter-app', background: '/src/public/images/anssi_logo.png' }
-          ],
-          '.filter-card': [
-            { category: 'filter-card', background: '/src/public/images/anssi_logo.png' }
-          ],
-          '.filter-web': [
-            { category: 'filter-web', background: '/src/public/images/anssi_logo.png' }
-          ]
-        };
+      const projects = {
+        '*': [
+          { category: 'filter-app', background: '/src/public/images/anssi_logo.png', images: ['/src/public/images/anssi_logo.png'], description: 'Description du projet app.' },
+          { category: 'filter-card', background: '/src/public/images/anssi_logo.png', images: ['/src/public/images/anssi_logo.png'], description: 'Description du projet card.' },
+          { category: 'filter-web', background: '/src/public/images/anssi_logo.png', images: ['/src/public/images/anssi_logo.png'], description: 'Description du projet web.' }
+        ],
+        '.filter-app': [
+          { category: 'filter-app', background: '/src/public/images/anssi_logo.png', images: ['/src/public/images/anssi_logo.png'], description: 'Description du projet app.' }
+        ],
+        '.filter-card': [
+          { category: 'filter-card', background: '/src/public/images/anssi_logo.png', images: ['/src/public/images/anssi_logo.png'], description: 'Description du projet card.' }
+        ],
+        '.filter-web': [
+          { category: 'filter-web', background: '/src/public/images/anssi_logo.png', images: ['/src/public/images/anssi_logo.png'], description: 'Description du projet web.' }
+        ]
+      };
       
-        function showProjects(filter) {
-          // Retirer les projets actuels avec une animation
-          const currentItems = document.querySelectorAll('#portfolio-projects .portfolio-item');
-          currentItems.forEach(item => {
-            item.classList.remove('show');
-            setTimeout(() => item.remove(), 300);  // Délai pour permettre à l'animation de s'exécuter
+      function showProjects(filter) {
+        const currentItems = document.querySelectorAll('#portfolio-projects .portfolio-item');
+        currentItems.forEach(item => {
+          item.classList.remove('show');
+          setTimeout(() => item.remove(), 300);
+        });
+      
+        setTimeout(() => {
+          const selectedProjects = projects[filter];
+          selectedProjects.forEach(project => {
+            const projectItem = document.createElement('div');
+            projectItem.classList.add('portfolio-item', project.category);
+            projectItem.style.backgroundImage = `url('${project.background}')`;
+            projectItem.innerHTML = `<div class="plus-icon"></div>`;
+            
+            projectItem.querySelector('.plus-icon').addEventListener('click', () => showModal(project));
+            
+            projectsContainer.appendChild(projectItem);
+            
+            setTimeout(() => {
+              projectItem.classList.add('show');
+            }, 10);
           });
+        }, 300);
+      }
       
-          // Ajouter les nouveaux projets après le délai
-          setTimeout(() => {
-            const selectedProjects = projects[filter];
-            selectedProjects.forEach(project => {
-              const projectItem = document.createElement('div');
-              projectItem.classList.add('portfolio-item', project.category);
-              projectItem.style.backgroundImage = `url('${project.background}')`;
-              projectItem.innerHTML = `<div class="plus-icon"></div>`;
-              projectsContainer.appendChild(projectItem);
+      function showModal(project) {
+        modal.style.display = 'flex';
+        
+        // Clear previous images
+        modalImagesContainer.innerHTML = '';
+        project.images.forEach((imgSrc, index) => {
+          const img = document.createElement('img');
+          img.src = imgSrc;
+          if (index === 0) img.classList.add('active');
+          modalImagesContainer.appendChild(img);
+        });
+        
+        modalDescription.textContent = project.description;
+        
+        let currentIndex = 0;
+        setInterval(() => {
+          const images = document.querySelectorAll('.modal-images img');
+          images[currentIndex].classList.remove('active');
+          currentIndex = (currentIndex + 1) % images.length;
+          images[currentIndex].classList.add('active');
+        }, 3000);
+      }
       
-              // Appliquer la classe 'show' pour déclencher l'animation
-              setTimeout(() => {
-                projectItem.classList.add('show');
-              }, 10);
-            });
-          }, 300);  // Délai correspondant à la durée de la transition
-        }
+      closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+      });
       
-        // Initialiser avec tous les projets
-        showProjects('*');
+      // Initialiser avec tous les projets
+      showProjects('*');
       
         // Ajouter les événements de clic sur les filtres
         filters.forEach(filter => {

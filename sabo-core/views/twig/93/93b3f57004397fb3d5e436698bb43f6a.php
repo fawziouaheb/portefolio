@@ -55,10 +55,23 @@ class __TwigTemplate_ffb698e0b1eff4c57733b9cb08a047ef extends Template
         </div>
   
         <!-- Conteneur pour afficher les sections -->
-        <div id=\"portfolio-projects\" class=\"row\"></div>
+      <div id=\"portfolio-projects\" class=\"row\"></div>
   
       </div>
-    </section><!-- End Portfolio Section -->
+      <!-- Modal -->
+      <div id=\"projectModal\" class=\"modal\">
+        <div class=\"modal-content\">
+            <span class=\"close\">&times;</span>
+            <div class=\"modal-images\">
+                <!-- Images slider -->
+            </div>
+            <div class=\"modal-description\">
+                <!-- Project description -->
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Portfolio Section -->
   </div>
   </section>";
     }
@@ -102,10 +115,23 @@ class __TwigTemplate_ffb698e0b1eff4c57733b9cb08a047ef extends Template
         </div>
   
         <!-- Conteneur pour afficher les sections -->
-        <div id=\"portfolio-projects\" class=\"row\"></div>
+      <div id=\"portfolio-projects\" class=\"row\"></div>
   
       </div>
-    </section><!-- End Portfolio Section -->
+      <!-- Modal -->
+      <div id=\"projectModal\" class=\"modal\">
+        <div class=\"modal-content\">
+            <span class=\"close\">&times;</span>
+            <div class=\"modal-images\">
+                <!-- Images slider -->
+            </div>
+            <div class=\"modal-description\">
+                <!-- Project description -->
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Portfolio Section -->
   </div>
   </section>", "template/section/project.html.twig", "C:\\wamp64\\www\\portefolio\\src\\views\\template\\section\\project.html.twig");
     }
