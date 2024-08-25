@@ -17,7 +17,6 @@
         }
     });
 
-    /**debut animation pour la partie projets scolaire */
     document.addEventListener('DOMContentLoaded', function() {
       const projectsContainer = document.getElementById('portfolio-projects');
       const modal = document.getElementById('projectModal');
@@ -25,6 +24,15 @@
       const modalImagesContainer = document.querySelector('.modal-images');
       const modalDescription = document.querySelector('.modal-description');
       
+      // Sélectionne tous les éléments de filtre
+      const filters = document.querySelectorAll('#portfolio-flters li');
+    
+      if (!projectsContainer || !modal || !closeModal || !modalImagesContainer || !modalDescription || !filters.length) {
+        console.error("Un ou plusieurs éléments requis ne sont pas trouvés dans le DOM.");
+        return;
+      }
+    
+      // Le reste de ton code de gestion des projets et filtres
       const projects = {
         '*': [
           { category: 'filter-app', background: '/src/public/images/anssi_logo.png', images: ['/src/public/images/anssi_logo.png'], description: 'Description du projet app.' },
@@ -41,14 +49,14 @@
           { category: 'filter-web', background: '/src/public/images/anssi_logo.png', images: ['/src/public/images/anssi_logo.png'], description: 'Description du projet web.' }
         ]
       };
-      
+    
       function showProjects(filter) {
         const currentItems = document.querySelectorAll('#portfolio-projects .portfolio-item');
         currentItems.forEach(item => {
           item.classList.remove('show');
           setTimeout(() => item.remove(), 300);
         });
-      
+    
         setTimeout(() => {
           const selectedProjects = projects[filter];
           selectedProjects.forEach(project => {
@@ -67,7 +75,7 @@
           });
         }, 300);
       }
-      
+    
       function showModal(project) {
         modal.style.display = 'flex';
         
@@ -90,27 +98,25 @@
           images[currentIndex].classList.add('active');
         }, 3000);
       }
-      
+    
       closeModal.addEventListener('click', () => {
         modal.style.display = 'none';
       });
-      
+    
       // Initialiser avec tous les projets
       showProjects('*');
-      
-        // Ajouter les événements de clic sur les filtres
-        filters.forEach(filter => {
-          filter.addEventListener('click', function() {
-            filters.forEach(f => f.classList.remove('filter-active'));
-            this.classList.add('filter-active');
-            const filterValue = this.getAttribute('data-filter');
-            showProjects(filterValue);
-          });
+    
+      // Ajouter les événements de clic sur les filtres
+      filters.forEach(filter => {
+        filter.addEventListener('click', function() {
+          filters.forEach(f => f.classList.remove('filter-active'));
+          this.classList.add('filter-active');
+          const filterValue = this.getAttribute('data-filter');
+          showProjects(filterValue);
         });
       });
-      
-      /** fin de la partie projet scolaire*/
-    
+    });
+     
       const hamburger = document.querySelector('.hamburger');
       const navMenu = document.querySelector('.navbar-m ul');
       
