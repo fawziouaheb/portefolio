@@ -47,9 +47,9 @@ class __TwigTemplate_ffb698e0b1eff4c57733b9cb08a047ef extends Template
           <div class=\"col-lg-12 d-flex justify-content-center\">
             <ul id=\"portfolio-flters\">
               <li data-filter=\"*\" class=\"filter-active\">All</li>
-              <li data-filter=\".filter-app\">Business Intelligence</li>
-              <li data-filter=\".filter-card\">Intelligence Artificielle</li>
-              <li data-filter=\".filter-web\">Web / Mobile</li>
+              <li data-filter=\".filter-app\">Réseau</li>
+              <li data-filter=\".filter-web\">Application web & mobile</li>
+              <li data-filter=\".filter-appDesktop\">Application bureau</li>
             </ul>
           </div>
         </div>
@@ -62,6 +62,9 @@ class __TwigTemplate_ffb698e0b1eff4c57733b9cb08a047ef extends Template
       <div id=\"projectModal\" class=\"modal\">
         <div class=\"modal-content\">
             <span class=\"close\">&times;</span>
+            <div class=\"language-icon\">
+                <img src=\"/src/public/images/anssi_logo.png\" alt=\"JavaFX\" class=\"language-image\"> <!-- Remplace par l'URL de ton icône -->
+            </div>
             <div class=\"modal-images\">
                 <!-- Images slider -->
             </div>
@@ -69,7 +72,9 @@ class __TwigTemplate_ffb698e0b1eff4c57733b9cb08a047ef extends Template
                 <!-- Project description -->
             </div>
         </div>
-      </div>
+    </div>
+    
+    
     </section>
     <!-- End Portfolio Section -->
   </div>
@@ -107,9 +112,9 @@ class __TwigTemplate_ffb698e0b1eff4c57733b9cb08a047ef extends Template
           <div class=\"col-lg-12 d-flex justify-content-center\">
             <ul id=\"portfolio-flters\">
               <li data-filter=\"*\" class=\"filter-active\">All</li>
-              <li data-filter=\".filter-app\">Business Intelligence</li>
-              <li data-filter=\".filter-card\">Intelligence Artificielle</li>
-              <li data-filter=\".filter-web\">Web / Mobile</li>
+              <li data-filter=\".filter-app\">Réseau</li>
+              <li data-filter=\".filter-web\">Application web & mobile</li>
+              <li data-filter=\".filter-appDesktop\">Application bureau</li>
             </ul>
           </div>
         </div>
@@ -122,6 +127,9 @@ class __TwigTemplate_ffb698e0b1eff4c57733b9cb08a047ef extends Template
       <div id=\"projectModal\" class=\"modal\">
         <div class=\"modal-content\">
             <span class=\"close\">&times;</span>
+            <div class=\"language-icon\">
+                <img src=\"/src/public/images/anssi_logo.png\" alt=\"JavaFX\" class=\"language-image\"> <!-- Remplace par l'URL de ton icône -->
+            </div>
             <div class=\"modal-images\">
                 <!-- Images slider -->
             </div>
@@ -129,7 +137,9 @@ class __TwigTemplate_ffb698e0b1eff4c57733b9cb08a047ef extends Template
                 <!-- Project description -->
             </div>
         </div>
-      </div>
+    </div>
+    
+    
     </section>
     <!-- End Portfolio Section -->
   </div>

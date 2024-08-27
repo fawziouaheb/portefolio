@@ -36,17 +36,21 @@
       const projects = {
         '*': [
           { category: 'filter-app', background: '/src/public/images/anssi_logo.png', images: ['/src/public/images/anssi_logo.png'], description: 'Description du projet app.' },
-          { category: 'filter-card', background: '/src/public/images/anssi_logo.png', images: ['/src/public/images/anssi_logo.png'], description: 'Description du projet card.' },
-          { category: 'filter-web', background: '/src/public/images/anssi_logo.png', images: ['/src/public/images/anssi_logo.png'], description: 'Description du projet web.' }
+          { category: 'filter-appDesktop', background: '/src/public/images/projet-DRAW.png', images: ['/src/public/images/projet-DRAW.png'], description: 'Description du projetssss card.' },
+          { category: 'filter-appDesktop', background: '/src/public/images/projet-CARBONINTENSITY.png', images: ['/src/public/images/projet-CARBONINTENSITY.png'], description: 'Description du projetssss card.' },
+          { category: 'filter-web', background: '/src/public/images/projet-RESERVATIONLOGEMENT.png', images: ['/src/public/images/projet-RESERVATIONLOGEMENT.png'], description: 'Description du projet web.' },
+          { category: 'filter-web', background: '/src/public/images/projet-PORTEFOLIO.png', images: ['/src/public/images/projet-PORTEFOLIO.png'], description: 'Description du projet web.' }
         ],
         '.filter-app': [
+          { category: 'filter-web', background: '/src/public/images/projet-PORTEFOLIO.png', images: ['/src/public/images/projet-PORTEFOLIO.png'], description: 'Description du projet web.' },
           { category: 'filter-app', background: '/src/public/images/anssi_logo.png', images: ['/src/public/images/anssi_logo.png'], description: 'Description du projet app.' }
         ],
-        '.filter-card': [
-          { category: 'filter-card', background: '/src/public/images/anssi_logo.png', images: ['/src/public/images/anssi_logo.png'], description: 'Description du projet card.' }
+        '.filter-appDesktop': [
+          { category: 'filter-appDesktop', background: '/src/public/images/projet-DRAW.png', images: ['/src/public/images/projet-DRAW.png'], description: 'Description du projetssss card.' },
+          { category: 'filter-appDesktop', background: '/src/public/images/projet-CARBONINTENSITY.png', images: ['/src/public/images/projet-CARBONINTENSITY.png'], description: 'Description du projet card.' }
         ],
         '.filter-web': [
-          { category: 'filter-web', background: '/src/public/images/anssi_logo.png', images: ['/src/public/images/anssi_logo.png'], description: 'Description du projet web.' }
+          { category: 'filter-web', background: '/src/public/images/projet-RESERVATIONLOGEMENT.png', images: ['/src/public/images/projet-RESERVATIONLOGEMENT.png'], description: 'Description du projet web.' }
         ]
       };
     
