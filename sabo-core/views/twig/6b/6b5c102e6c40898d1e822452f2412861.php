@@ -51,20 +51,21 @@ class __TwigTemplate_70b0472ed034ab43885db02555fdcd8c extends Template
         ";
         // line 9
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 12
+        // line 18
         echo "    </head>
     <body>
 
         ";
-        // line 15
+        // line 21
         $this->displayBlock('content', $context, $blocks);
-        // line 18
+        // line 24
         echo "   
         ";
-        // line 19
+        // line 25
         $this->displayBlock('javascript', $context, $blocks);
-        // line 21
-        echo "    </body>
+        // line 29
+        echo "
+    </body>
 </html>";
     }
 
@@ -80,25 +81,33 @@ class __TwigTemplate_70b0472ed034ab43885db02555fdcd8c extends Template
     {
         $macros = $this->macros;
         // line 10
-        echo "        <link rel=\"stylesheet\" href=\"/src/public/css/index.css\">
+        echo "
+        <link rel=\"stylesheet\" href=\"/src/public/css/sections.css\">
+        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\">
+        <link rel=\"stylesheet\" href=\"/src/public/css/project.css\">
+        <link rel=\"stylesheet\" href=\"/src/public/css/profile.css\">
+          <!-- Google Fonts -->
+            <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i\" rel=\"stylesheet\">
         ";
     }
 
-    // line 15
+    // line 21
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 16
+        // line 22
         echo "
         ";
     }
 
-    // line 19
+    // line 25
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 20
-        echo "        ";
+        // line 26
+        echo "         <!-- Vendor JS Files -->
+            <script src=\"/src/public/javascript/index.js\"></script>
+        ";
     }
 
     /**
@@ -114,7 +123,7 @@ class __TwigTemplate_70b0472ed034ab43885db02555fdcd8c extends Template
      */
     public function getDebugInfo()
     {
-        return array (  101 => 20,  97 => 19,  92 => 16,  88 => 15,  83 => 10,  79 => 9,  72 => 8,  67 => 21,  65 => 19,  62 => 18,  60 => 15,  55 => 12,  53 => 9,  49 => 8,  41 => 2,);
+        return array (  108 => 26,  104 => 25,  99 => 22,  95 => 21,  84 => 10,  80 => 9,  73 => 8,  67 => 29,  65 => 25,  62 => 24,  60 => 21,  55 => 18,  53 => 9,  49 => 8,  41 => 2,);
     }
 
     public function getSourceContext()
@@ -128,7 +137,13 @@ class __TwigTemplate_70b0472ed034ab43885db02555fdcd8c extends Template
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
         <title>{% block title %} {% endblock %}</title>
         {% block stylesheets %}
-        <link rel=\"stylesheet\" href=\"/src/public/css/index.css\">
+
+        <link rel=\"stylesheet\" href=\"/src/public/css/sections.css\">
+        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\">
+        <link rel=\"stylesheet\" href=\"/src/public/css/project.css\">
+        <link rel=\"stylesheet\" href=\"/src/public/css/profile.css\">
+          <!-- Google Fonts -->
+            <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i\" rel=\"stylesheet\">
         {% endblock %}
     </head>
     <body>
@@ -138,8 +153,11 @@ class __TwigTemplate_70b0472ed034ab43885db02555fdcd8c extends Template
         {% endblock %}
    
         {% block javascript %}
+         <!-- Vendor JS Files -->
+            <script src=\"/src/public/javascript/index.js\"></script>
         {% endblock %}
+
     </body>
-</html>", "template/layoutGeneral.html.twig", "C:\\wamp64\\www\\portefolio\\src\\views\\template\\layoutGeneral.html.twig");
+</html>", "template/layoutGeneral.html.twig", "C:\\Users\\fouaheb\\Downloads\\portefolio\\src\\views\\template\\layoutGeneral.html.twig");
     }
 }

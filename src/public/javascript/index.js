@@ -2,16 +2,40 @@
     document.addEventListener('scroll', function() {
         var progressVmware = document.getElementById('progress-vmware').querySelector('.progress');
         var progressPhp = document.getElementById('progress-php').querySelector('.progress');
+        var progressJava = document.getElementById('progress-java').querySelector('.progress');
+        var progressC = document.getElementById('progress-c').querySelector('.progress');
+        var progressMysql = document.getElementById('progress-mysql').querySelector('.progress');
+        var progressOracle = document.getElementById('progress-oracle').querySelector('.progress');
+        var progressMariadb = document.getElementById('progress-mariadb').querySelector('.progress');
+        var progressJavascript = document.getElementById('progress-javascript').querySelector('.progress');
+        var progressKalilinux = document.getElementById('progress-kali-linux').querySelector('.progress');
+        var progressWindows = document.getElementById('progress-windows').querySelector('.progress');
 
         var position = document.getElementById('progress-section').getBoundingClientRect().top;
 
         var screenPosition = window.innerHeight / 1.5;
 
         if (position < screenPosition) {
-            progressPhp.style.width = '60%'; // Remplissage pour PHP
-            progressVmware.style.width = '75%'; // Remplissage pour VMWARE
+            progressWindows.style.width = '50%'
+            progressKalilinux.style.width = '40%'
+            progressJavascript.style.width = '50%'
+            progressMysql.style.width ='70%';
+            progressOracle.style.width ='45%';
+            progressMariadb.style.width ='45%';
+            progressC.style.width ='40%';
+            progressJava.style.width ='60%';
+            progressPhp.style.width = '50%'; // Remplissage pour PHP
+            progressVmware.style.width = '70%'; // Remplissage pour VMWARE
         }
         else{
+            progressWindows.style.width = '0%'
+            progressKalilinux.style.width = '0%';
+            progressJavascript.style.width = '0%';
+            progressMysql.style.width ='0%';
+            progressOracle.style.width ='0%';
+            progressMariadb.style.width ='0%';
+            progressC.style.width ='0%';
+            progressJava.style.width ='0%';
             progressVmware.style.width = '0%';
             progressPhp.style.width = '0%';
         }
@@ -133,7 +157,7 @@
 
       document.addEventListener('DOMContentLoaded', function () {
         const typingText = document.getElementById('typing-text');
-        const text = "Salut ! Moi c'est Fawzi. N'hésitez pas à scroller pour découvrir l'ensemble de mon profil !";
+        const text = "Salut ! Moi c'est Fawzi. N'hésitez pas à scroller pour découvrir l'ensemble de mon profil.";
     
         let index = 0;
     

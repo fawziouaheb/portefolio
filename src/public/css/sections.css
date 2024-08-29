@@ -89,6 +89,7 @@
     height: 5vh;
     width: auto;
     transform:translate(-100%, -10%);
+    border-radius: 15%;        
 }
 .text-experience-2 p {
     font-size: 1rem;
@@ -99,7 +100,7 @@
 .bullet-point {
     margin-right: 0.7vw;
     font-size: 1.5em; /* Taille du point */
-    color: black; /* Couleur du point */
+    color: white; /* Couleur du point */
     width: 1em;
 }
 
@@ -142,13 +143,10 @@
 .skill-with-progress {
     display: flex; /* Utilisation de flexbox */
     align-items: center; /* Aligne verticalement la barre et le texte au centre */
-    gap: 20px; /* Espacement entre le texte et la barre */
+    gap: 20px;
+
 }
 
-.skill-with-progress p {
-    color: white;
-    margin: 0; /* Supprime la marge par défaut */
-}
 
 .progress-bar {
     background-color: #2E2C2C;
@@ -166,12 +164,12 @@
     transition: width 2s ease-out;
 }
 
-.skills-section p {
+.skill-with-progress p {
+    margin: 0; /* Enlève la marge par défaut du <p> */
     font-size: 1em;
-    color: #333;
-    line-height: 1.5;
+    color: white;
+    line-height: 3.5;
 }
-
 /** fin partie css pour la section compétences*/
 /** début partie css pour la section formation */
 .formation {
