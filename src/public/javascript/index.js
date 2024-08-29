@@ -1,5 +1,6 @@
 
     document.addEventListener('scroll', function() {
+
         var progressVmware = document.getElementById('progress-vmware').querySelector('.progress');
         var progressPhp = document.getElementById('progress-php').querySelector('.progress');
         var progressJava = document.getElementById('progress-java').querySelector('.progress');
@@ -42,12 +43,14 @@
     });
 
     document.addEventListener('DOMContentLoaded', function() {
+
       const projectsContainer = document.getElementById('portfolio-projects');
       const modal = document.getElementById('projectModal');
       const closeModal = document.querySelector('.close');
       const modalImagesContainer = document.querySelector('.modal-images');
       const modalDescription = document.querySelector('.modal-description');
-      
+      const iconLangage = document.querySelector('.language-image');
+
       // Sélectionne tous les éléments de filtre
       const filters = document.querySelectorAll('#portfolio-flters li');
     
@@ -60,21 +63,22 @@
       const projects = {
         '*': [
           { category: 'filter-app', background: '/src/public/images/anssi_logo.png', images: ['/src/public/images/anssi_logo.png'], description: 'Description du projet app.' },
-          { category: 'filter-appDesktop', background: '/src/public/images/projet-DRAW.png', images: ['/src/public/images/projet-DRAW.png'], description: 'Description du projetssss card.' },
-          { category: 'filter-appDesktop', background: '/src/public/images/projet-CARBONINTENSITY.png', images: ['/src/public/images/projet-CARBONINTENSITY.png'], description: 'Description du projetssss card.' },
-          { category: 'filter-web', background: '/src/public/images/projet-RESERVATIONLOGEMENT.png', images: ['/src/public/images/projet-RESERVATIONLOGEMENT.png'], description: 'Description du projet web.' },
-          { category: 'filter-web', background: '/src/public/images/projet-PORTEFOLIO.png', images: ['/src/public/images/projet-PORTEFOLIO.png'], description: 'Description du projet web.' }
+          { category: 'filter-appDesktop', background: '/src/public/images/projet-DRAW.png', images: ['/src/public/images/projet-DRAW.png'],langage : ['/src/public/images/java.png'], description: 'Description du projetssss card.' },
+          { category: 'filter-appDesktop', background: '/src/public/images/projet-CARBONINTENSITY.png', images: ['/src/public/images/projet-CARBONINTENSITY.png'], langage : ['/src/public/images/javafx.png'],description: 'Description du projetssss card.' },
+          { category: 'filter-web', background: '/src/public/images/projet-RESERVATIONLOGEMENT.png', images: ['/src/public/images/projet-RESERVATIONLOGEMENT.png'],langage : ['/src/public/images/php.png'], description: 'Description du projet web.' },
+          { category: 'filter-web', background: '/src/public/images/projet-PORTEFOLIO.png', images: ['/src/public/images/projet-PORTEFOLIO.png'], langage : ['/src/public/images/php.png'], description: 'Description du projet web.' }
         ],
         '.filter-app': [
           { category: 'filter-web', background: '/src/public/images/projet-PORTEFOLIO.png', images: ['/src/public/images/projet-PORTEFOLIO.png'], description: 'Description du projet web.' },
           { category: 'filter-app', background: '/src/public/images/anssi_logo.png', images: ['/src/public/images/anssi_logo.png'], description: 'Description du projet app.' }
         ],
         '.filter-appDesktop': [
-          { category: 'filter-appDesktop', background: '/src/public/images/projet-DRAW.png', images: ['/src/public/images/projet-DRAW.png'], description: 'Description du projetssss card.' },
-          { category: 'filter-appDesktop', background: '/src/public/images/projet-CARBONINTENSITY.png', images: ['/src/public/images/projet-CARBONINTENSITY.png'], description: 'Description du projet card.' }
+          { category: 'filter-appDesktop', background: '/src/public/images/projet-DRAW.png', images: ['/src/public/images/projet-DRAW.png'],langage : ['/src/public/images/java.png'], description: 'Description du projetssss card.' },
+          { category: 'filter-appDesktop', background: '/src/public/images/projet-CARBONINTENSITY.png', images: ['/src/public/images/projet-CARBONINTENSITY.png'], langage : ['/src/public/images/javafx.png'],description: 'Description du projet card.' }
         ],
         '.filter-web': [
-          { category: 'filter-web', background: '/src/public/images/projet-RESERVATIONLOGEMENT.png', images: ['/src/public/images/projet-RESERVATIONLOGEMENT.png'], description: 'Description du projet web.' }
+           { category: 'filter-web', background: '/src/public/images/projet-PORTEFOLIO.png', images: ['/src/public/images/projet-PORTEFOLIO.png'],langage : ['/src/public/images/php.png'], description: 'Description du projet web.' },
+           { category: 'filter-web', background: '/src/public/images/projet-RESERVATIONLOGEMENT.png', images: ['/src/public/images/projet-RESERVATIONLOGEMENT.png'], langage : ['/src/public/images/php.png'],description: 'Description du projet web.' }
         ]
       };
     
@@ -117,6 +121,8 @@
         });
         
         modalDescription.textContent = project.description;
+        iconLangage.src = project.langage;
+        
         
         let currentIndex = 0;
         setInterval(() => {
