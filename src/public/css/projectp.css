@@ -1,0 +1,45 @@
+
+.project-pro {
+    padding: 50px;
+    width: 100%;
+    box-sizing: border-box; 
+    border: solid red 1px;
+    margin: 0 auto;
+}
+.project-pro h2 {
+    text-align: center;
+    margin-bottom: 15vh;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-project {
+    position: relative;
+    width: 60%;
+    background-color: rgb(34, 33, 33);
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    padding: 30px;
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+}
+.logo-tereos {
+    position: absolute;
+    top : 0%;
+    left: 100%;
+    height: 8vh;
+    width: auto;
+    transform: translateX(-100%)
+}
+.logo-loraWan {
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    width: auto;
+    height: 5vh;
+}

@@ -2,12 +2,10 @@
 
 namespace SaboCore\Database\Default\Provider;
 
-use Exception;
 use Override;
 use PDO;
 use SaboCore\Config\Config;
 use SaboCore\Config\ConfigException;
-use SaboCore\Database\Default\Model\SaboModel;
 use SaboCore\Database\Providers\DatabaseProvider;
 use Throwable;
 
@@ -28,17 +26,15 @@ class MysqlProvider extends DatabaseProvider{
 
         try{
             self::$con = new PDO(
-                dsn: "mysql:host={$providerConfig->getConfig("host")};dbname={$providerConfig->getConfig("dbname")}",
-                username: $providerConfig->getConfig("user"),
-                password: $providerConfig->getConfig("password"),
+                dsn: "mysql:host={$providerConfig->getConfig(name: "host")};dbname={$providerConfig->getConfig(name: "dbname")}",
+                username: $providerConfig->getConfig(name: "user"),
+                password: $providerConfig->getConfig(name: "password"),
                 options: [
                     PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",
                     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
                 ]
             );
-
-            if(!SaboModel::initModel() ) throw new Exception();
         }
         catch(Throwable){
             throw new ConfigException(message: "Echec de connexion à la base de donnée");
@@ -48,6 +44,7 @@ class MysqlProvider extends DatabaseProvider{
     /**
      * @return PDO|null la connexion crée à l'initialisation ou null
      */
+    #[Override]
     public function getCon():?PDO{
         return self::$con;
     }

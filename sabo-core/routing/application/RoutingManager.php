@@ -15,7 +15,7 @@ use SaboCore\Routing\Request\Request;
 use SaboCore\Routing\Response\HtmlResponse;
 use SaboCore\Routing\Response\RedirectResponse;
 use SaboCore\Routing\Response\Response;
-use SaboCore\Routing\Response\RessourceResponse;
+use SaboCore\Routing\Response\ResourceResponse;
 use SaboCore\Routing\Routes\RouteManager;
 use SaboCore\Utils\Session\FrameworkSession;
 use Throwable;
@@ -48,10 +48,10 @@ class RoutingManager{
 
         // vérification d'accès à une ressource
         if($this->isAccessibleRessource() )
-            return new RessourceResponse(ressourceAbsolutePath: APP_CONFIG->getConfig("ROOT") . $this->link);
+            return new ResourceResponse(ressourceAbsolutePath: APP_CONFIG->getConfig(name: "ROOT") . $this->link);
 
         // recherche de l'action à faire
-        $searchResult = RouteManager::findRouteByLink(link: $this->link);
+        $searchResult = RouteManager::findRouteByLink(link: $this->link,method: $request->getMethod());
 
         // affichage de la page non trouvée
         if($searchResult == null)
