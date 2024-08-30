@@ -47,9 +47,9 @@ class __TwigTemplate_4fbc5ff52989846d342cda38a555d7a0 extends Template
           <div class=\"col-lg-12 d-flex justify-content-center\">
             <ul id=\"portfolio-flters\">
               <li data-filter=\"*\" class=\"filter-active\">All</li>
-              <li data-filter=\".filter-app\">Réseau</li>
               <li data-filter=\".filter-web\">Application web & mobile</li>
               <li data-filter=\".filter-appDesktop\">Application bureau</li>
+              <li data-filter=\".filter-game\">Jeux</li>
             </ul>
           </div>
         </div>
@@ -62,13 +62,15 @@ class __TwigTemplate_4fbc5ff52989846d342cda38a555d7a0 extends Template
       <div id=\"projectModal\" class=\"modal\">
         <div class=\"modal-content\">
             <span class=\"close\">&times;</span>
-            <div class=\"language-icon\">
+            <div  class=\"language-icon\">
                 <img src=\"/src/public/images/anssi_logo.png\" alt=\"JavaFX\" class=\"language-image\"> <!-- Remplace par l'URL de ton icône -->
             </div>
+            <h2 id=\"title-project\"> ############</h2>
             <div class=\"modal-images\">
                 <!-- Images slider -->
             </div>
             <div class=\"modal-description\">
+            <p>la description de mon text </p>
                 <!-- Project description -->
             </div>
         </div>
@@ -112,9 +114,9 @@ class __TwigTemplate_4fbc5ff52989846d342cda38a555d7a0 extends Template
           <div class=\"col-lg-12 d-flex justify-content-center\">
             <ul id=\"portfolio-flters\">
               <li data-filter=\"*\" class=\"filter-active\">All</li>
-              <li data-filter=\".filter-app\">Réseau</li>
               <li data-filter=\".filter-web\">Application web & mobile</li>
               <li data-filter=\".filter-appDesktop\">Application bureau</li>
+              <li data-filter=\".filter-game\">Jeux</li>
             </ul>
           </div>
         </div>
@@ -127,13 +129,15 @@ class __TwigTemplate_4fbc5ff52989846d342cda38a555d7a0 extends Template
       <div id=\"projectModal\" class=\"modal\">
         <div class=\"modal-content\">
             <span class=\"close\">&times;</span>
-            <div class=\"language-icon\">
+            <div  class=\"language-icon\">
                 <img src=\"/src/public/images/anssi_logo.png\" alt=\"JavaFX\" class=\"language-image\"> <!-- Remplace par l'URL de ton icône -->
             </div>
+            <h2 id=\"title-project\"> ############</h2>
             <div class=\"modal-images\">
                 <!-- Images slider -->
             </div>
             <div class=\"modal-description\">
+            <p>la description de mon text </p>
                 <!-- Project description -->
             </div>
         </div>

@@ -80,15 +80,17 @@ class __TwigTemplate_f31d366352772bb1ccee713da17432cc extends Template
         // line 46
         $this->loadTemplate("template/section/project.html.twig", "/template/index.html.twig", 46)->display($context);
         // line 47
+        $this->loadTemplate("template/section/hobby.html.twig", "/template/index.html.twig", 47)->display($context);
+        // line 48
         echo "
 ";
     }
 
-    // line 50
+    // line 51
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 51
+        // line 52
         echo "<script src=\"/src/public/javascript/index.js\"></script>  
 ";
     }
@@ -114,7 +116,7 @@ class __TwigTemplate_f31d366352772bb1ccee713da17432cc extends Template
      */
     public function getDebugInfo()
     {
-        return array (  92 => 51,  88 => 50,  83 => 47,  81 => 46,  79 => 45,  77 => 44,  75 => 43,  73 => 42,  70 => 41,  66 => 8,  60 => 5,  56 => 4,  49 => 3,  38 => 2,);
+        return array (  94 => 52,  90 => 51,  85 => 48,  83 => 47,  81 => 46,  79 => 45,  77 => 44,  75 => 43,  73 => 42,  70 => 41,  66 => 8,  60 => 5,  56 => 4,  49 => 3,  38 => 2,);
     }
 
     public function getSourceContext()
@@ -165,6 +167,7 @@ class __TwigTemplate_f31d366352772bb1ccee713da17432cc extends Template
 {% include 'template/section/skills.html.twig' %}
 {% include 'template/section/formation.html.twig' %}
 {% include 'template/section/project.html.twig' %}
+{% include 'template/section/hobby.html.twig' %}
 
 {% endblock %}
 

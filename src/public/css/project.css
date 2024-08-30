@@ -337,14 +337,19 @@
 
 /* Description du projet */
 .modal-description {
+  font-family: 'Roboto', sans-serif;
   width: 100%;
   text-align: left;
   font-size: 16px;
-  color: #333;
+  color: white;
   line-height: 1.5;
 }
-
+.modal-content h2{
+  color: white;
+  font-size: 22px;
+}
 .modal-description h2 {
+  font-family: 'Roboto', sans-serif;
   margin-bottom: 10px;
   font-size: 24px;
   color: #444;

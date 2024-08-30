@@ -50,7 +50,7 @@
       const modalImagesContainer = document.querySelector('.modal-images');
       const modalDescription = document.querySelector('.modal-description');
       const iconLangage = document.querySelector('.language-image');
-
+      var titleProject = document.getElementById('title-project');
       // Sélectionne tous les éléments de filtre
       const filters = document.querySelectorAll('#portfolio-flters li');
     
@@ -62,23 +62,133 @@
       // Le reste de ton code de gestion des projets et filtres
       const projects = {
         '*': [
-          { category: 'filter-app', background: '/src/public/images/anssi_logo.png', images: ['/src/public/images/anssi_logo.png'], description: 'Description du projet app.' },
-          { category: 'filter-appDesktop', background: '/src/public/images/projet-DRAW.png', images: ['/src/public/images/projet-DRAW.png'],langage : ['/src/public/images/java.png'], description: 'Description du projetssss card.' },
-          { category: 'filter-appDesktop', background: '/src/public/images/projet-CARBONINTENSITY.png', images: ['/src/public/images/projet-CARBONINTENSITY.png'], langage : ['/src/public/images/javafx.png'],description: 'Description du projetssss card.' },
-          { category: 'filter-web', background: '/src/public/images/projet-RESERVATIONLOGEMENT.png', images: ['/src/public/images/projet-RESERVATIONLOGEMENT.png'],langage : ['/src/public/images/php.png'], description: 'Description du projet web.' },
-          { category: 'filter-web', background: '/src/public/images/projet-PORTEFOLIO.png', images: ['/src/public/images/projet-PORTEFOLIO.png'], langage : ['/src/public/images/php.png'], description: 'Description du projet web.' }
+          { 
+            category: 'filter-game',
+            title: 'Bataille Navale En Réseau',
+            background: '/src/public/images/interface-bataille-naval.png',
+            images: ['/src/public/images/projet-BATAILLENAVAL.png'],
+            description: `
+              <strong>Février 2023</strong><br>
+              <strong>Fonctionnalités :</strong><br>
+                  - Jeu contre l'ordinateur et jeu en réseau entre deux personnes.<br>
+                  - Sécurité des échanges de données pendant le jeu en réseau.<br>
+                  - Intégration de mécanismes d'authentification pour garantir l'identité des joueurs et empêcher les accès non autorisés.<br>
+              <strong>Environnement technique :</strong> JavaFX, Scene Builder.`
+          },
+          {
+            category: 'filter-appDesktop', 
+            title : 'Draw With ME ',
+            background: '/src/public/images/projet-DRAW.png',
+            images: ['/src/public/images/projet-DRAW.png'],
+            langage : ['/src/public/images/java.png'], 
+            description: `
+              <strong>FEVRIER 2021</strong><br>
+              Application qui permet de dessiner plusieurs formes géométriques.<br>
+              <strong>Fonctionnalités principales : </strong><br>
+                 Effacer, déplacer, modifier, enregistrer le travail effectué, ouvrir un nouveau fichier . . .<br>
+              <strong>Environnements techniques : <strong>Java.
+            `
+          },
+          {
+            category: 'filter-appDesktop',
+            title: 'Intensité Carbonne En Temps Réel',
+            background: '/src/public/images/projet-CARBONINTENSITY.png',
+            images: ['/src/public/images/projet-CARBONINTENSITY.png'],
+            langage : ['/src/public/images/javafx.png'],
+            description: `
+            <strong>MARS 2024 :</strong><br>
+            <strong>Fonctionnalité :</strong> Une application qui permet de récupérer l'intensité carbone en temps réel, ainsi que la consommation et la production d'électricité selon les filières, en fonction de la ville choisie.<br>
+            <strong>Environnement technique :</strong> JavaFX.
+            `
+          },
+          { 
+            category: 'filter-web', 
+            title : "Plateforme De Location De Logement",
+            background: '/src/public/images/projet-RESERVATIONLOGEMENT.png',
+            images: ['/src/public/images/projet-RESERVATIONLOGEMENT.png'],
+            langage : ['/src/public/images/php.png'],
+            description: `
+                  <strong>FÉVRIER 2022:</strong><br>
+                  <strong>Fonctionnalités :</strong><br>
+                  - Conception et rédaction du cahier de charge.<br>
+                  - Mise en place d'un système de réservation et de connexion sécurisé.<br>
+                  - Assurer la cybersécurité du site.<br>
+                  <strong>Environnement technique :</strong> utilisation des langages de programmation tels que CSS, HTML, JavaScript et PHP.`
+          },
+          { 
+            category: 'filter-web',
+            background: '/src/public/images/projet-PORTEFOLIO.png',
+            images: ['/src/public/images/projet-PORTEFOLIO.png'],
+            langage : ['/src/public/images/php.png'], 
+            description: 'Description du projet web.' 
+          }
         ],
-        '.filter-app': [
-          { category: 'filter-web', background: '/src/public/images/projet-PORTEFOLIO.png', images: ['/src/public/images/projet-PORTEFOLIO.png'], description: 'Description du projet web.' },
-          { category: 'filter-app', background: '/src/public/images/anssi_logo.png', images: ['/src/public/images/anssi_logo.png'], description: 'Description du projet app.' }
+        '.filter-game': [
+          { 
+            category: 'filter-game',
+            title: 'Bataille Navale En Réseau',
+            background: '/src/public/images/interface-bataille-naval.png',
+            images: ['/src/public/images/projet-BATAILLENAVAL.png'],
+            description: `
+              <strong>Février 2023</strong><br>
+              <strong>Fonctionnalités :</strong><br>
+                  - Jeu contre l'ordinateur et jeu en réseau entre deux personnes.<br>
+                  - Sécurité des échanges de données pendant le jeu en réseau.<br>
+                  - Intégration de mécanismes d'authentification pour garantir l'identité des joueurs et empêcher les accès non autorisés.<br>
+              <strong>Environnement technique :  </strong>JavaFX, Scene Builder.
+            ` },
+          
         ],
         '.filter-appDesktop': [
-          { category: 'filter-appDesktop', background: '/src/public/images/projet-DRAW.png', images: ['/src/public/images/projet-DRAW.png'],langage : ['/src/public/images/java.png'], description: 'Description du projetssss card.' },
-          { category: 'filter-appDesktop', background: '/src/public/images/projet-CARBONINTENSITY.png', images: ['/src/public/images/projet-CARBONINTENSITY.png'], langage : ['/src/public/images/javafx.png'],description: 'Description du projet card.' }
+          {
+            category: 'filter-appDesktop', 
+            title : 'Draw With ME ',
+            background: '/src/public/images/projet-DRAW.png',
+            images: ['/src/public/images/projet-DRAW.png'],
+            langage : ['/src/public/images/java.png'], 
+            description: `
+              <strong>FEVRIER 2021</strong><br>
+              Application qui permet de dessiner plusieurs formes géométriques.<br>
+              <strong>Fonctionnalités principales : </strong><br>
+                 Effacer, déplacer, modifier, enregistrer le travail effectué, ouvrir un nouveau fichier . . .<br>
+              <strong>Environnements techniques : <strong>Java.
+            `
+          },
+          {
+            category: 'filter-appDesktop',
+            title: 'Intensité Carbonne En Temps Réel',
+            background: '/src/public/images/projet-CARBONINTENSITY.png',
+            images: ['/src/public/images/projet-CARBONINTENSITY.png'],
+            langage : ['/src/public/images/javafx.png'],
+            description: `
+            <strong>MARS 2024 :</strong><br>
+            <strong>Fonctionnalité :</strong> Une application qui permet de récupérer l'intensité carbone en temps réel, ainsi que la consommation et la production d'électricité selon les filières, en fonction de la ville choisie.<br>
+            <strong>Environnement technique :</strong> JavaFX.
+            `
+          }
         ],
         '.filter-web': [
-           { category: 'filter-web', background: '/src/public/images/projet-PORTEFOLIO.png', images: ['/src/public/images/projet-PORTEFOLIO.png'],langage : ['/src/public/images/php.png'], description: 'Description du projet web.' },
-           { category: 'filter-web', background: '/src/public/images/projet-RESERVATIONLOGEMENT.png', images: ['/src/public/images/projet-RESERVATIONLOGEMENT.png'], langage : ['/src/public/images/php.png'],description: 'Description du projet web.' }
+           { 
+            category: 'filter-web',
+            background: '/src/public/images/projet-PORTEFOLIO.png',
+            images: ['/src/public/images/projet-PORTEFOLIO.png'],
+            langage : ['/src/public/images/php.png'], 
+            description: 'Description du projet web.' 
+          },
+          { 
+            category: 'filter-web', 
+            title : "Plateforme De Location De Logement",
+            background: '/src/public/images/projet-RESERVATIONLOGEMENT.png',
+            images: ['/src/public/images/projet-RESERVATIONLOGEMENT.png'],
+            langage : ['/src/public/images/php.png'],
+            description: `
+                  <strong>FÉVRIER 2022</strong><br>
+                  <strong>Fonctionnalités :</strong><br>
+                      - Conception et rédaction du cahier de charge.<br>
+                      - Mise en place d'un système de réservation et de connexion sécurisé.<br>
+                      - Assurer la cybersécurité du site.<br>
+                  <strong>Environnement technique :</strong> utilisation des langages de programmation tels que CSS, HTML, JavaScript et PHP.`
+          }
         ]
       };
     
@@ -120,8 +230,9 @@
           modalImagesContainer.appendChild(img);
         });
         
-        modalDescription.textContent = project.description;
+        modalDescription.innerHTML = project.description;
         iconLangage.src = project.langage;
+        titleProject.textContent = project.title;
         
         
         let currentIndex = 0;
