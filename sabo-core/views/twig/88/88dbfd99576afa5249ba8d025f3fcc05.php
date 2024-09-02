@@ -41,8 +41,10 @@ class __TwigTemplate_ec331e804f50406d7edb34674bddbe5e extends Template
         <img class=\"logo-tereos\" src=\"/src/public/images/logo-tereos.png\" alt=\"logo de Tereos\">
         <img class=\"logo-loraWan\" src=\"/src/public/images/LoRaWAN_Logo.svg.png\" alt=\"Logo de la technologie LoraWan\">
         <h3>Projet IoT</h3>
+        <img class=\"image-project-lora\" src=\"/src/public/images/project-IOT.png\" alt=\"projet IoT\">
+        <p>J'ai eu l'oocasio</p>
 
-          </div>
+    </div>
 </div>";
     }
 
@@ -71,8 +73,10 @@ class __TwigTemplate_ec331e804f50406d7edb34674bddbe5e extends Template
         <img class=\"logo-tereos\" src=\"/src/public/images/logo-tereos.png\" alt=\"logo de Tereos\">
         <img class=\"logo-loraWan\" src=\"/src/public/images/LoRaWAN_Logo.svg.png\" alt=\"Logo de la technologie LoraWan\">
         <h3>Projet IoT</h3>
+        <img class=\"image-project-lora\" src=\"/src/public/images/project-IOT.png\" alt=\"projet IoT\">
+        <p>J'ai eu l'oocasio</p>
 
-          </div>
+    </div>
 </div>", "template/section/projectp.html.twig", "C:\\Users\\fouaheb\\Downloads\\portefolio\\src\\views\\template\\section\\projectp.html.twig");
     }
 }
