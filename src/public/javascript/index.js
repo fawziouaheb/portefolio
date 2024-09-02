@@ -302,5 +302,4 @@
           isGradient = !isGradient; // Basculer l'état
       });
   });
-  
-    
+

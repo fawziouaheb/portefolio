@@ -51,19 +51,19 @@ class __TwigTemplate_70b0472ed034ab43885db02555fdcd8c extends Template
         ";
         // line 9
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 21
+        // line 22
         echo "    </head>
     <body>
 
         ";
-        // line 24
+        // line 25
         $this->displayBlock('content', $context, $blocks);
-        // line 27
+        // line 28
         echo "   
         ";
-        // line 28
+        // line 29
         $this->displayBlock('javascript', $context, $blocks);
-        // line 32
+        // line 33
         echo "
     </body>
 </html>";
@@ -88,26 +88,27 @@ class __TwigTemplate_70b0472ed034ab43885db02555fdcd8c extends Template
         <link rel=\"stylesheet\" href=\"/src/public/css/profile.css\">
         <link rel=\"stylesheet\" href=\"/src/public/css/hobby.css\">
         <link rel=\"stylesheet\" href=\"/src/public/css/projectp.css\">
+        <link rel=\"stylesheet\" href=\"/src/public/css/about.css\">
 
           <!-- Google Fonts -->
             <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i\" rel=\"stylesheet\">
         ";
     }
 
-    // line 24
+    // line 25
     public function block_content($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 25
+        // line 26
         echo "
         ";
     }
 
-    // line 28
+    // line 29
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 29
+        // line 30
         echo "         <!-- Vendor JS Files -->
             <script src=\"/src/public/javascript/index.js\"></script>
         ";
@@ -126,7 +127,7 @@ class __TwigTemplate_70b0472ed034ab43885db02555fdcd8c extends Template
      */
     public function getDebugInfo()
     {
-        return array (  111 => 29,  107 => 28,  102 => 25,  98 => 24,  84 => 10,  80 => 9,  73 => 8,  67 => 32,  65 => 28,  62 => 27,  60 => 24,  55 => 21,  53 => 9,  49 => 8,  41 => 2,);
+        return array (  112 => 30,  108 => 29,  103 => 26,  99 => 25,  84 => 10,  80 => 9,  73 => 8,  67 => 33,  65 => 29,  62 => 28,  60 => 25,  55 => 22,  53 => 9,  49 => 8,  41 => 2,);
     }
 
     public function getSourceContext()
@@ -147,6 +148,7 @@ class __TwigTemplate_70b0472ed034ab43885db02555fdcd8c extends Template
         <link rel=\"stylesheet\" href=\"/src/public/css/profile.css\">
         <link rel=\"stylesheet\" href=\"/src/public/css/hobby.css\">
         <link rel=\"stylesheet\" href=\"/src/public/css/projectp.css\">
+        <link rel=\"stylesheet\" href=\"/src/public/css/about.css\">
 
           <!-- Google Fonts -->
             <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i\" rel=\"stylesheet\">
