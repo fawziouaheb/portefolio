@@ -117,8 +117,8 @@
           },
           { 
             category: 'filter-web',
-            background: '/src/public/images/projet-PORTEFOLIO.png',
-            images: ['/src/public/images/projet-PORTEFOLIO.png'],
+            background: '/src/public/images/portefolio_p.png',
+            images: ['/src/public/images/portefolio_p.png'],
             langage : ['/src/public/images/php.png'], 
             description: 'Description du projet web.' 
           }
@@ -170,8 +170,8 @@
         '.filter-web': [
            { 
             category: 'filter-web',
-            background: '/src/public/images/projet-PORTEFOLIO.png',
-            images: ['/src/public/images/projet-PORTEFOLIO.png'],
+            background: '/src/public/images/portefolio_p.png',
+            images: ['/src/public/images/portefolio_p.png'],
             langage : ['/src/public/images/php.png'], 
             description: 'Description du projet web.' 
           },
