@@ -84,20 +84,23 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
         // line 48
         $this->loadTemplate("template/section/projectp.html.twig", "/template/index.html.twig", 48)->display($context);
         // line 49
-        $this->loadTemplate("template/section/hobby.html.twig", "/template/index.html.twig", 49)->display($context);
+        $this->loadTemplate("template/section/otherProject.html.twig", "/template/index.html.twig", 49)->display($context);
         // line 50
-        $this->loadTemplate("template/section/about.html.twig", "/template/index.html.twig", 50)->display($context);
+        $this->loadTemplate("template/section/hobby.html.twig", "/template/index.html.twig", 50)->display($context);
         // line 51
+        $this->loadTemplate("template/section/about.html.twig", "/template/index.html.twig", 51)->display($context);
+        // line 52
         echo "
+
 
 ";
     }
 
-    // line 55
+    // line 57
     public function block_javascript($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 56
+        // line 58
         echo "<script src=\"/src/public/javascript/index.js\"></script>  
 ";
     }
@@ -123,7 +126,7 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  101 => 56,  97 => 55,  91 => 51,  89 => 50,  87 => 49,  85 => 48,  83 => 47,  81 => 46,  79 => 45,  77 => 44,  75 => 43,  73 => 42,  70 => 41,  66 => 8,  60 => 5,  56 => 4,  49 => 3,  38 => 2,);
+        return array (  104 => 58,  100 => 57,  93 => 52,  91 => 51,  89 => 50,  87 => 49,  85 => 48,  83 => 47,  81 => 46,  79 => 45,  77 => 44,  75 => 43,  73 => 42,  70 => 41,  66 => 8,  60 => 5,  56 => 4,  49 => 3,  38 => 2,);
     }
 
     public function getSourceContext()
@@ -176,8 +179,10 @@ class __TwigTemplate_b2dbed1cf2b00994eb6c8bbd93a63227 extends Template
 {% include 'template/section/logiciel.html.twig' %}
 {% include 'template/section/project.html.twig' %}
 {% include 'template/section/projectp.html.twig'%}
+{% include 'template/section/otherProject.html.twig' %}
 {% include 'template/section/hobby.html.twig' %}
 {% include 'template/section/about.html.twig' %}
+
 
 
 {% endblock %}
